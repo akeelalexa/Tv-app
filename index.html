@@ -24,7 +24,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
         }
         .card {
@@ -36,8 +36,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-decoration: none; /* لإزالة الخط تحت النصوص */
+            color: inherit;
         }
-        .card:hover {
+        .card:hover, .card:focus-within {
             border-color: var(--primary-color);
             transform: translateY(-8px);
             box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
@@ -51,7 +53,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         .card h3 { margin: 10px 0; font-size: 1.5em; color: #fff; }
-        .card p { color: #aaa; font-size: 0.95em; line-height: 1.6; margin-bottom: 20px; height: 50px; }
+        .card p { color: #aaa; font-size: 0.95em; line-height: 1.6; margin-bottom: 20px; height: 50px; overflow: hidden; }
         .btn {
             display: block;
             width: 85%;
@@ -62,6 +64,8 @@
             border-radius: 12px;
             font-weight: bold;
             transition: 0.3s;
+            border: none;
+            cursor: pointer;
         }
         .btn:hover {
             background: #fff;
@@ -70,33 +74,41 @@
     </style>
 </head>
 <body>
+
     <h1>متجر تطبيقات Android TV</h1>
-    <p class="subtitle">تطبيقات مختارة بعناية ومحدثة دائماً</p>
+    <p class="subtitle">تطبيقات مختارة بعناية ومحدثة دائماً للشاشات الذكية</p>
+
     <div class="grid">
+        
         <div class="card">
             <img src="https://i.ibb.co/pjz8jpGZ/logo.png" alt="Cinemana" class="app-img">
             <h3>تطبيق سينمانا</h3>
             <p>الإصدار الجديد والحصري للشاشات - تجربة مشاهدة مستقرة وسريعة.</p>
             <a href="https://drive.google.com/uc?export=download&id=1OYBaD1WhrcK79YZS0SweJD58prhnUebF" class="btn">تحميل APK الجديد</a>
         </div>
+
         <div class="card">
             <img src="https://cdn.salla.sa/KWVDQ/lFU9j07tpOUogX1bBmsp8f60MpE8DNceZXRSIJ2C.png" alt="Eliaa Pro" class="app-img">
             <h3>Eliaa Pro v2</h3>
             <p>مشغل القنوات المحدث - أداء عالٍ ودعم شامل لكافة السيرفرات.</p>
             <a href="https://drive.google.com/uc?export=download&id=1hKfZ1d06J0ZFYUFvEWbYlcIDaWz_E_vH" class="btn">تحميل APK</a>
         </div>
+
         <div class="card">
-            <img src="https://i.ibb.co/rf7hzBKv/unnamed.png" alt="Cee Buzz" class="app-img">
-            <h3>Cee Buzz</h3>
-            <p></p>
-            <a href="https://drive.google.com/uc?export=download&id=1B_GCa8n7PLQkhGcUoRmIJB8POuT7AS9Y" class="btn">تحميل APK</a>
+            <img src="https://i.ibb.co/rRtFCNr0/logo.png" alt="Cee Buzz" class="app-img">
+            <h3>Cee Buzz V1.2</h3>
+            <p>الإصدار المحدث بأيقونة جديدة - تجربة مشاهدة محسنة وسرعة فائقة.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1UttOfFZp1Aiq1I3KllkekvM2veQ729Tl" class="btn">تحميل APK الجديد</a>
         </div>
+
         <div class="card" style="opacity: 0.5; border-style: dashed;">
             <div class="app-img" style="background: #2a2a2a; display: flex; align-items: center; justify-content: center; font-size: 2.5em;">➕</div>
             <h3>قريباً</h3>
-            <p>نعمل على فحص وإضافة المزيد من التطبيقات المميزة.</p>
-            <a href="#" class="btn" style="background: #444; cursor: default;">انتظرونا</a>
+            <p>نعمل على فحص وإضافة المزيد من التطبيقات المميزة للمتجر.</p>
+            <button class="btn" style="background: #444; cursor: default;">انتظرونا</button>
         </div>
+
     </div>
+
 </body>
 </html>
