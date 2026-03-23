@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -25,7 +24,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
         }
         .card {
@@ -38,7 +37,7 @@
             flex-direction: column;
             align-items: center;
         }
-        .card:hover {
+        .card:hover, .card:focus-within {
             border-color: var(--primary-color);
             transform: translateY(-8px);
             box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
@@ -71,8 +70,10 @@
     </style>
 </head>
 <body>
+
     <h1>متجر تطبيقات Android TV</h1>
     <p class="subtitle">تطبيقات مختارة بعناية ومحدثة دائماً</p>
+
     <div class="grid">
         <div class="card">
             <img src="https://i.ibb.co/pjz8jpGZ/logo.png" alt="Cinemana" class="app-img">
@@ -80,18 +81,28 @@
             <p>الإصدار الجديد والحصري للشاشات - تجربة مشاهدة مستقرة وسريعة.</p>
             <a href="https://drive.google.com/uc?export=download&id=1OYBaD1WhrcK79YZS0SweJD58prhnUebF" class="btn">تحميل APK الجديد</a>
         </div>
+
         <div class="card">
             <img src="https://cdn.salla.sa/KWVDQ/lFU9j07tpOUogX1bBmsp8f60MpE8DNceZXRSIJ2C.png" alt="Eliaa Pro" class="app-img">
             <h3>Eliaa Pro v2</h3>
             <p>مشغل القنوات المحدث - أداء عالٍ ودعم شامل لكافة السيرفرات.</p>
             <a href="https://drive.google.com/uc?export=download&id=1hKfZ1d06J0ZFYUFvEWbYlcIDaWz_E_vH" class="btn">تحميل APK</a>
         </div>
+
         <div class="card">
-            <img src="https://i.ibb.co/rf7hzBKv/unnamed.png" alt="Cee Buzz" class="app-img">
+            <img src="https://i.ibb.co/rf7hzBKv/unnamed.png" alt="Cee Buzz Old" class="app-img">
             <h3>Cee Buzz</h3>
-            <p></p>
+            <p>تطبيق ترفيهي مميز لمتابعة أحدث المحتويات العالمية المترجمة.</p>
             <a href="https://drive.google.com/uc?export=download&id=1B_GCa8n7PLQkhGcUoRmIJB8POuT7AS9Y" class="btn">تحميل APK</a>
         </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/rRtFCNr0/logo.png" alt="Cee Buzz New" class="app-img">
+            <h3>Cee Buzz V1.2</h3>
+            <p>الإصدار المحدث - حل مشكلات التوقف وتحسين سرعة الأداء على الشاشات.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1UttOfFZp1Aiq1I3KllkekvM2veQ729Tl" class="btn">تحميل التحديث الجديد</a>
+        </div>
+
         <div class="card" style="opacity: 0.5; border-style: dashed;">
             <div class="app-img" style="background: #2a2a2a; display: flex; align-items: center; justify-content: center; font-size: 2.5em;">➕</div>
             <h3>قريباً</h3>
@@ -99,5 +110,6 @@
             <a href="#" class="btn" style="background: #444; cursor: default;">انتظرونا</a>
         </div>
     </div>
+
 </body>
 </html>
