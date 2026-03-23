@@ -48,98 +48,14 @@
             box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
         }
 
-        .app-img {
-            width: 110px;
-            height: 110px;
-            margin-bottom: 15px;
-            object-fit: contain;
-        }
-
-        .card h3 { margin: 10px 0; font-size: 1.5em; color: #fff; }
-        .card p { color: #aaa; font-size: 0.95em; line-height: 1.6; margin-bottom: 20px; height: 50px; }
-
-        .btn { 
-            display: block; 
-            width: 85%;
-            background: var(--primary-color); 
-            color: #000; 
-            text-decoration: none; 
-            padding: 12px; 
-            border-radius: 12px; 
-            font-weight: bold; 
-            transition: 0.3s;
-        }
-
-        .btn:hover { 
-            background: #fff;
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-
-    <h1>متجر تطبيقات Android TV</h1>
-    <p class="subtitle">تطبيقات مختارة بعناية ومحدثة دائماً</p>
-
-    <div class="grid">
-        
-        <div class="card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFmGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLycgeDp4bXB0az0nWE1QIENvcmUgNS40LjAnPgogPHJkZjpSREYgeG1sbnM6cmRmPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjJz4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICB4bWxuczp4bXBNTT0naHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLycKICAgeG1sbnM6c3RSZWY9J2h0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMnCiAgIHhtbG5zOnhtcD0naHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLycKICAgeG1wTU06RG9jdW1lbnRJRD0neG1wLmRpZDo4OUEyNzMxQTFERDYxMUVFOTdBMEIyNjI3MkUwMjEwNCcKICAgeG1wTU06SW5zdGFuY2VJRD0neG1wLmlpZDo4OUEyNzMxOTFERDYxMUVFOTdBMEIyNjI3MkUwMjEwNCcKICB4bXA6Q3JlYXRvclRvb2w9J0Fkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChXaW5kb3dzKSc+CiAgIDx4bXBNTTpEZXJpdmVkRnJvbQogICAgc3RSZWY6aW5zdGFuY2VJRD0neG1wLmlpZDpCMkExMzRBMzFFRDYxMUVFQUQ4MEMyNEQ4OTc1QUYzMicKICAgIHN0UmVmOmRvY3VtZW50SUQ9J3htcC5kaWQ6QjJBMTM0QTQxRUQ2MTFFRUFEODBDMjREODk3NUEFMzInLz4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9J3cnPz4N+N+cAAAgAElEQVR4nOy9V5Ac53mu/X/VOfXunJy7<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر تطبيقات Android TV</title>
-    <style>
-        :root {
-            --primary-color: #00ff88; 
-            --bg-dark: #121212;
-            --card-bg: #1e1e1e;
-        }
-
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background: var(--bg-dark); 
-            color: white; 
-            text-align: center; 
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 { color: var(--primary-color); margin-top: 20px; font-size: 2.2em; }
-        .subtitle { color: #888; margin-bottom: 40px; }
-
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 25px; 
-            max-width: 1000px; 
-            margin: auto; 
-        }
-
-        .card { 
-            background: var(--card-bg); 
-            border: 1px solid #333; 
-            border-radius: 20px; 
-            padding: 30px 20px; 
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card:hover { 
-            border-color: var(--primary-color); 
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
-        }
-
         /* تنسيق أيقونة التطبيق */
         .app-img {
-            width: 100px; /* زيادة الحجم قليلاً للتوضيح */
-            height: 100px;
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
             margin-bottom: 15px;
-            object-fit: contain; /* لضمان عدم اقتصاص الأيقونة */
-            /* لم تعد الخلفية البيضاء أو الحدود السوداء ضرورية */
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         .card h3 { margin: 10px 0; font-size: 1.5em; color: #fff; }
@@ -172,14 +88,27 @@
     <div class="grid">
         
         <div class="card">
-            <img src="https://i.ibb.co/3s6823s/cinemana-icon-transparent.png" alt="Cinemana" class="app-img">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/91/3d/8e/913d8e64-e69c-9c7b-7b71-3b7c8e64913d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/256x256bb.jpg" alt="Cinemana" class="app-img">
             <h3>تطبيق سينمانا</h3>
             <p>الإصدار الجديد والحصري للشاشات - تجربة مشاهدة مستقرة وسريعة.</p>
             <a href="https://drive.google.com/uc?export=download&id=1OYBaD1WhrcK79YZS0SweJD58prhnUebF" class="btn">تحميل APK الجديد</a>
         </div>
 
         <div class="card">
-            <div class="app-img" style="background: #2a2a2a; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2.5em;">🚀</div>
+            <div class="app-img" style="background: #2a2a2a; display: flex; align-items: center; justify-content: center; font-size: 2.5em;">🚀</div>
             <h3>Eliia Pro v2</h3>
             <p>مشغل القنوات المحدث - أداء عالٍ ودعم شامل لكافة السيرفرات.</p>
-            <a href="
+            <a href="https://drive.google.com/uc?export=download&id=1hKfZ1d06J0ZFYUFvEWbYlcIDaWz_E_vH" class="btn">تحميل APK</a>
+        </div>
+
+        <div class="card" style="opacity: 0.5; border-style: dashed;">
+            <div class="app-img" style="background: #2a2a2a; display: flex; align-items: center; justify-content: center; font-size: 2.5em;">➕</div>
+            <h3>قريباً</h3>
+            <p>نعمل على فحص وإضافة المزيد من التطبيقات المميزة.</p>
+            <a href="#" class="btn" style="background: #444; cursor: default;">انتظرونا</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
