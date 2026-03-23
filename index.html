@@ -1,77 +1,26 @@
-transition: 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .download-btn:hover {
-            background: var(--accent-color);
-            color: #000;
-        }
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري الخاص</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
+        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 15px; padding: 20px; transition: 0.3s; }
+        .card:hover { border-color: #00ff88; transform: translateY(-5px); }
+        h1 { color: #00ff88; margin-bottom: 30px; }
+        .btn { display: block; background: #00ff88; color: #000; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; margin-top: 15px; }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <header>
-        <div class="search-bar">
-            <input type="text" placeholder="ابحث عن تطبيقك المفضل...">
-            <span>🔍</span>
+    <h1>متجر تطبيقات Android TV</h1>
+    <div class="grid">
+        <div class="card">
+            <h3>تطبيق سينمانا</h3>
+            <p>أحدث إصدار للشاشات</p>
+            <a href="#" class="btn">تحميل APK</a>
         </div>
-        <nav class="categories">
-            <button class="active">الكل</button>
-            <button>العراق</button>
-            <button>رياضة</button>
-            <button>IPTV</button>
-            <button>سينما</button>
-        </nav>
-    </header>
-
-    <main class="app-grid">
-        <div class="app-card">
-            <div class="app-header">
-                <div class="app-info">
-                    <div class="app-icon">🎬</div>
-                    <div class="app-details">
-                        <h3>Cinemana Plus</h3>
-                        <p>🇮🇶 العراق</p>
-                    </div>
-                </div>
-                <span class="version-tag">v.8.0.4</span>
-            </div>
-            <button class="download-btn"><span>⬇️</span> تحميل الآن</button>
-        </div>
-
-        <div class="app-card">
-            <div class="app-header">
-                <div class="app-info">
-                    <div class="app-icon">⚽</div>
-                    <div class="app-details">
-                        <h3>1 IRAQ TV</h3>
-                        <p>بث مباشر - رياضة</p>
-                    </div>
-                </div>
-                <span class="version-tag">v1.2</span>
-            </div>
-            <button class="download-btn"><span>⬇️</span> تحميل الآن</button>
-        </div>
-
-        <div class="app-card">
-            <div class="app-header">
-                <div class="app-info">
-                    <div class="app-icon">🌐</div>
-                    <div class="app-details">
-                        <h3>Super IQ</h3>
-                        <p>أدوات وشبكات</p>
-                    </div>
-                </div>
-                <span class="version-tag">v4.5</span>
-            </div>
-            <button class="download-btn"><span>⬇️</span> تحميل الآن</button>
-        </div>
-    </main>
-</div>
-
+    </div>
 </body>
 </html>
