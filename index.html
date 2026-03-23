@@ -5,31 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>متجري الخاص</title>
     <style>
-        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 40px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 15px; padding: 20px; transition: 0.3s; }
-        .card:hover { border-color: #00ff88; transform: translateY(-5px); }
+        body { 
+            font-family: sans-serif; 
+            background: #121212; 
+            color: white; 
+            text-align: center; 
+            margin: 0;
+            padding: 20px;
+        }
         h1 { color: #00ff88; margin-bottom: 30px; }
-        .btn { display: block; background: #00ff88; color: #000; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; margin-top: 15px; }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: auto; 
+        }
+        .card { 
+            background: #1e1e1e; 
+            border: 1px solid #333; 
+            border-radius: 15px; 
+            padding: 25px; 
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover { 
+            border-color: #00ff88; 
+            transform: translateY(-5px); 
+        }
+        .card h3 { margin-top: 0; color: #fff; }
+        .card p { color: #ccc; font-size: 0.9em; }
+        .btn { 
+            display: block; 
+            background: #00ff88; 
+            color: #000; 
+            text-decoration: none; 
+            padding: 12px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            margin-top: 20px;
+        }
+        .btn:hover { background: #00cc6e; }
     </style>
 </head>
 <body>
+
     <h1>متجر تطبيقات Android TV</h1>
+
     <div class="grid">
+        
         <div class="card">
             <h3>تطبيق سينمانا</h3>
-            <p>أحدث إصدار للشاشات</p>
+            <p>أحدث إصدار للشاشات - تحميل مباشر</p>
+            <a href="https://drive.google.com/uc?export=download&id=1KoOalmy7EEdGSRZgWhet8Bx1ei4jXCT9" class="btn">تحميل APK</a>
+        </div>
+
+        <div class="card">
+            <h3>Eliia Pro</h3>
+            <p>أحدث إصدار للشاشات - سيرفر سريع</p>
             <a href="#" class="btn">تحميل APK</a>
         </div>
-        <div style="background: #1f1f1f; border-radius: 15px; padding: 30px; margin: 20px auto; max-width: 800px; text-align: center; border: 1px solid #333;">
-    
-    <h2 style="color: white; margin-bottom: 10px;">Eliaa pro</h2> <p style="color: #ccc; margin-bottom: 25px;">وصف التطبيق هنا</p> <a href="رابط_التحميل.apk" style="text-decoration: none;">
-        <div style="background: #4ade80; color: black; padding: 15px; border-radius: 10px; font-weight: bold; font-size: 18px;">
-            تحميل APK
-        </div>
-    </a>
-    
-</div>
+
     </div>
+
 </body>
 </html>
