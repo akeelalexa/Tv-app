@@ -3,66 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجري الخاص</title>
+    <title>متجر تطبيقات Android TV</title>
     <style>
+        :root {
+            --primary-color: #00ff88; /* لون التميز الأخضر */
+            --bg-dark: #121212;
+            --card-bg: #1e1e1e;
+        }
+
         body { 
-            font-family: sans-serif; 
-            background: #121212; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: var(--bg-dark); 
             color: white; 
             text-align: center; 
             margin: 0;
             padding: 20px;
         }
-        h1 { color: #00ff88; margin-bottom: 30px; }
+
+        h1 { color: var(--primary-color); margin-top: 20px; font-size: 2.2em; }
+        .subtitle { color: #888; margin-bottom: 40px; }
+
+        /* تصميم الشبكة (Grid) */
         .grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 20px; 
+            gap: 25px; 
             max-width: 1000px; 
             margin: auto; 
         }
+
+        /* تصميم بطاقة التطبيق */
         .card { 
-            background: #1e1e1e; 
+            background: var(--card-bg); 
             border: 1px solid #333; 
-            border-radius: 15px; 
-            padding: 25px; 
-            transition: transform 0.3s, border-color 0.3s;
+            border-radius: 20px; 
+            padding: 30px 20px; 
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         .card:hover { 
-            border-color: #00ff88; 
-            transform: translateY(-5px); 
+            border-color: var(--primary-color); 
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
         }
-        .card h3 { margin-top: 0; color: #fff; }
-        .card p { color: #ccc; font-size: 0.9em; }
+
+        .app-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .card h3 { margin: 10px 0; font-size: 1.5em; color: #fff; }
+        .card p { color: #aaa; font-size: 0.95em; line-height: 1.6; margin-bottom: 20px; }
+
+        /* تصميم زر التحميل */
         .btn { 
             display: block; 
-            background: #00ff88; 
+            width: 80%;
+            background: var(--primary-color); 
             color: #000; 
             text-decoration: none; 
             padding: 12px; 
-            border-radius: 8px; 
+            border-radius: 12px; 
             font-weight: bold; 
-            margin-top: 20px;
+            transition: 0.3s;
         }
-        .btn:hover { background: #00cc6e; }
+
+        .btn:hover { 
+            background: #fff;
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
 
     <h1>متجر تطبيقات Android TV</h1>
+    <p class="subtitle">تطبيقات مختارة بعناية لأجهزة الشاشة والبوكس</p>
 
     <div class="grid">
         
         <div class="card">
+            <div class="app-icon">🎬</div>
             <h3>تطبيق سينمانا</h3>
-            <p>أحدث إصدار للشاشات - تحميل مباشر</p>
+            <p>أحدث إصدار مخصص للشاشات الذكية لمتابعة الأفلام والمسلسلات.</p>
             <a href="https://drive.google.com/uc?export=download&id=1KoOalmy7EEdGSRZgWhet8Bx1ei4jXCT9" class="btn">تحميل APK</a>
         </div>
 
         <div class="card">
-            <h3>Eliia Pro</h3>
-            <p>أحدث إصدار للشاشات - سيرفر سريع</p>
-            <a href="#" class="btn">تحميل APK</a>
+            <div class="app-icon">🚀</div>
+            <h3>Eliia Pro v2</h3>
+            <p>النسخة الثانية والمحدثة من تطبيق Eliia Pro - أداء أسرع واستقرار أكثر.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1hKfZ1d06J0ZFYUFvEWbYlcIDaWz_E_vH" class="btn">تحميل APK</a>
+        </div>
+
+        <div class="card" style="opacity: 0.5; border-style: dashed;">
+            <div class="app-icon">➕</div>
+            <h3>قريباً</h3>
+            <p>سيتم إضافة المزيد من التطبيقات المحدثة هنا.</p>
+            <a href="#" class="btn" style="background: #444; cursor: default;">انتظرونا</a>
         </div>
 
     </div>
